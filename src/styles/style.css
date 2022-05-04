@@ -41,12 +41,69 @@ h3 {
 }
 
 body {
+  margin: 0;
   font: 16px/1.6em 'Open Sans', sans-serif;
   color: var(--dark);
 }
 
-section {
+section,
+header,
+footer {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 165px;
+  position: relative;
+}
+
+section::before,
+header::before,
+footer::before {
+  content: url(../images/background.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
+}
+
+header {
+  background-color: var(--light);
+
+}
+
+header span {
+  color: var(--main);
+}
+
+.header-img {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -100px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+a {
+  background-color: var(--main);
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-185 {
+  margin-bottom: 185px;
 }
