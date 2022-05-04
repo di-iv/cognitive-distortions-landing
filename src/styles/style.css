@@ -13,11 +13,13 @@
 
 @font-face {
   font-family: 'Open Sans';
+  font-weight: 400;
   src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf');
 }
 
 @font-face {
   font-family: 'Neucha';
+  font-weight: 400;
   src: url('../fonts/Neucha-Regular.ttf');
 }
 
@@ -37,6 +39,7 @@ h1,
 h2,
 h3 {
   line-height: 1.2em;
+  font-weight: 400;
   font-family: 'Neucha', sans-serif;
 }
 
@@ -55,13 +58,14 @@ footer {
   position: relative;
 }
 
-section::before,
-header::before,
-footer::before {
-  content: url(../images/background.png);
+.background::before {
+  content: '';
+  background-image: url(../images/background.png);
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10%;
@@ -72,7 +76,7 @@ header {
 
 }
 
-header span {
+.highlight {
   color: var(--main);
 }
 
@@ -100,10 +104,23 @@ a {
   font-weight: bold;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
 
 .mb-185 {
   margin-bottom: 185px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  margin-bottom: -200px;
 }
