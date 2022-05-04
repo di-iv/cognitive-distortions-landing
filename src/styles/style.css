@@ -45,6 +45,7 @@ h3 {
 
 body {
   margin: 0;
+  box-sizing: border-box;
   font: 16px/1.6em 'Open Sans', sans-serif;
   color: var(--dark);
 }
@@ -91,17 +92,24 @@ header {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .gap-30 {
   gap: 30px;
 }
 
-a {
+.btn {
   background-color: var(--main);
   text-transform: uppercase;
   color: var(--white);
   padding: 12px 24px;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
 }
 
 .mb-30 {
@@ -122,5 +130,47 @@ a {
 
 .video {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.what-is {
   margin-bottom: -200px;
+  z-index: 1;
+}
+
+.cognitive-distortions {
+  background-color: var(--main-dark);
+  padding-top: 200px;
+}
+
+.cognitive-distortions-title,
+.cognitive-distortions-card {
+  width: 350px;
+  margin: 0;
+}
+
+.cognitive-distortions-title {
+  font-size: 52px;
+  color: var(--white);
+}
+
+.cognitive-distortions-card {
+  background-color: var(--light);
+  padding: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cognitive-distortions-number {
+  margin: 0 0 40px;
+  font: 64px/1 'Neucha', sans-serif;
+}
+
+.cognitive-distortions-card-title {
+  color: var(--main);
+}
+
+.cognitive-distortions-card:hover,
+.cognitive-distortions-card:hover>.cognitive-distortions-card-title {
+  background-color: var(--main);
+  color: var(--white);
 }
