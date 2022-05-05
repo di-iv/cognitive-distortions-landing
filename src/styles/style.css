@@ -96,13 +96,13 @@ header {
 }
 
 
-.column-gap-30 {
+.two-columns {
   display: flex;
   gap: 30px;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.two-columns>* {
+  flex-basis: 50%;
 }
 
 .btn {
@@ -137,6 +137,12 @@ header {
   text-align: center;
   margin-bottom: -200px;
   z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .cognitive-distortions {
@@ -188,6 +194,15 @@ header {
   color: var(--white);
 }
 
+.distortion-header {
+  display: flex;
+  gap: 30px;
+}
+
+.distortion-dark .distortion-header {
+  flex-direction: row-reverse;
+}
+
 .distortion-image {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -199,10 +214,6 @@ header {
 
 .distortion-dark .distortion-section-name {
   color: var(--white-transparent)
-}
-
-.distortion-dark .column-gap-30 {
-  flex-direction: row-reverse;
 }
 
 .distortion-title {
