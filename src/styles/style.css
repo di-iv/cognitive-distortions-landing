@@ -183,6 +183,11 @@ header {
   background-color: var(--light);
 }
 
+.distortion-dark {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
 .distortion-image {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -190,6 +195,14 @@ header {
 .distortion-section-name {
   font: 24px 'Neucha';
   color: var(--dark-transparent)
+}
+
+.distortion-dark .distortion-section-name {
+  color: var(--white-transparent)
+}
+
+.distortion-dark .column-gap-30 {
+  flex-direction: row-reverse;
 }
 
 .distortion-title {
@@ -211,4 +224,9 @@ header {
   text-transform: uppercase;
   font: bold 14px 'Open Sans';
   margin-bottom: 20px;
+}
+
+.distortion-dark .distortion-content-title {
+  background-color: var(--white);
+  color: var(--brown);
 }
