@@ -41,11 +41,19 @@ h3 {
   line-height: 1.2em;
   font-weight: 400;
   font-family: 'Neucha', sans-serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  box-sizing: border-box;
   font: 16px/1.6em 'Open Sans', sans-serif;
   color: var(--dark);
   overflow-x: hidden;
@@ -137,6 +145,7 @@ header {
   text-align: center;
   margin-bottom: -200px;
   z-index: 1;
+  padding-top: 100px;
 }
 
 .navigation {
@@ -164,19 +173,20 @@ header {
 .cognitive-distortions-card {
   background-color: var(--light);
   padding: 24px;
-  box-sizing: border-box;
   cursor: pointer;
   text-decoration: none;
   color: var(--main-dark);
 }
 
 .cognitive-distortions-number {
+  display: block;
   margin: 0 0 40px;
   font: 64px/1 'Neucha', sans-serif;
 }
 
 .cognitive-distortions-card-title {
   color: var(--main);
+  margin-bottom: 16px;
 }
 
 .cognitive-distortions-card:hover,
@@ -240,4 +250,56 @@ header {
 .distortion-dark .distortion-content-title {
   background-color: var(--white);
   color: var(--brown);
+}
+
+footer .two-columns {
+  background-color: var(--main-dark);
+  padding: 55px;
+  color: var(--white)
+}
+
+.subscription {
+  align-items: center;
+}
+
+.subscription-form-title {
+  margin-bottom: 10px;
+}
+
+.subscription-form {
+  display: flex;
+}
+
+.subscription-form-input {
+  padding: 15px;
+  height: 50px;
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.subscription-form-btn {
+  background-color: var(--main);
+  height: 50px;
+  width: 70px;
+  border: none;
+}
+
+.subscription-form-btn::before {
+  content: url(../images/send.svg);
+}
+
+.subscription-form-info {
+  font-size: 12px;
+}
+
+.subscription-form-info-link {
+  color: var(--white);
+
+}
+
+.contacts-info {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
 }
