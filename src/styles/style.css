@@ -100,7 +100,8 @@ header {
   position: absolute;
   height: 525px;
   top: 55px;
-  right: -100px;
+  right: -104px;
+  z-index: -1;
 }
 
 
@@ -134,7 +135,7 @@ header {
 }
 
 .mb-185 {
-  margin-bottom: 185px;
+  margin-bottom: 190px;
 }
 
 .video {
@@ -156,7 +157,7 @@ header {
 
 .cognitive-distortions {
   background-color: var(--main-dark);
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .cognitive-distortions-title,
@@ -264,6 +265,7 @@ footer .two-columns {
 
 .subscription-form-title {
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .subscription-form {
@@ -281,7 +283,7 @@ footer .two-columns {
 .subscription-form-btn {
   background-color: var(--main);
   height: 50px;
-  width: 70px;
+  min-width: 70px;
   border: none;
 }
 
@@ -302,4 +304,8 @@ footer .two-columns {
   text-align: center;
   margin-top: 60px;
   font-size: 14px;
+}
+
+.contacts-info-item:not(:last-child) {
+  margin-bottom: 16px;
 }
