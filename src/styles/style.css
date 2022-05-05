@@ -1,308 +1,308 @@
 /** CSS STYLE **/
 :root {
-	--white: #fff;
-	--white-transparent: #d7ccc0;
-	--light: #f5f4f0;
-	--main: #fe8a02;
-	--main-dark: #42413c;
-	--dark: #2a2626;
-	--dark-transparent: #908d8b;
-	--brown: #b09a81;
-	--blue: #1085c5;
+  --white: #fff;
+  --white-transparent: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --dark-transparent: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
 }
 
 @font-face {
-	font-family: "Open Sans";
-	font-weight: 400;
-	src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
 @font-face {
-	font-family: "Neucha";
-	font-weight: 400;
-	src: url("../fonts/Neucha-Regular.ttf");
+  font-family: "Neucha";
+  font-weight: 400;
+  src: url("../fonts/Neucha-Regular.ttf");
 }
 
 h1 {
-	font-size: 72px;
+  font-size: 72px;
 }
 
 h2 {
-	font-size: 60px;
+  font-size: 60px;
 }
 
 h3 {
-	font-size: 34px;
+  font-size: 34px;
 }
 
 h1,
 h2,
 h3 {
-	line-height: 1.2em;
-	font-weight: 400;
-	font-family: "Neucha", sans-serif;
-	margin: 0;
+  line-height: 1.2em;
+  font-weight: 400;
+  font-family: "Neucha", sans-serif;
+  margin: 0;
 }
 
 p {
-	margin: 0;
+  margin: 0;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font: 16px/1.6em "Open Sans", sans-serif;
-	color: var(--dark);
-	overflow-x: hidden;
+  margin: 0;
+  font: 16px/1.6em "Open Sans", sans-serif;
+  color: var(--dark);
+  overflow-x: hidden;
 }
 
 section,
 header,
 footer {
-	position: relative;
-	z-index: -2;
+  position: relative;
+  z-index: -2;
 }
 
 .container {
-	max-width: 1110px;
-	margin: 0 auto;
-	padding: 100px 0;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 header::before,
 .distortion::before {
-	content: "";
-	background-image: url("../images/background.png");
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0.1;
-	z-index: -1;
+  content: "";
+  background-image: url("../images/background.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 header {
-	background-color: var(--light);
+  background-color: var(--light);
 }
 
 .highlight {
-	color: var(--main);
+  color: var(--main);
 }
 
 .header-img {
-	position: absolute;
-	height: 525px;
-	top: 55px;
-	right: -104px;
-	z-index: -1;
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -104px;
+  z-index: -1;
 }
 
 .two-columns {
-	display: flex;
-	gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .two-columns>* {
-	flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .btn {
-	background-color: var(--main);
-	text-transform: uppercase;
-	color: var(--white);
-	padding: 12px 24px;
-	text-decoration: none;
-	font-weight: bold;
-	cursor: pointer;
-	display: block;
-	width: fit-content;
+  background-color: var(--main);
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
 }
 
 .mb-30 {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .mb-40 {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .mb-185 {
-	margin-bottom: 190px;
+  margin-bottom: 190px;
 }
 
 .video {
-	filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
 }
 
 .what-is {
-	text-align: center;
-	margin-bottom: -100px;
-	z-index: 1;
-	padding-top: 100px;
+  text-align: center;
+  margin-bottom: -100px;
+  z-index: 1;
+  padding-top: 100px;
 }
 
 .navigation {
-	display: flex;
-	gap: 30px;
-	flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .cognitive-distortions {
-	background-color: var(--main-dark);
-	padding-top: 100px;
+  background-color: var(--main-dark);
+  padding-top: 100px;
 }
 
 .cognitive-distortions-title,
 .cognitive-distortions-card {
-	width: 350px;
-	margin: 0;
+  width: 350px;
+  margin: 0;
 }
 
 .cognitive-distortions-title {
-	font-size: 52px;
-	color: var(--white);
+  font-size: 52px;
+  color: var(--white);
 }
 
 .cognitive-distortions-card {
-	background-color: var(--light);
-	padding: 24px;
-	cursor: pointer;
-	text-decoration: none;
-	color: var(--main-dark);
+  background-color: var(--light);
+  padding: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--main-dark);
 }
 
 .cognitive-distortions-number {
-	display: block;
-	margin: 0 0 40px;
-	font: 64px/1 "Neucha", sans-serif;
+  display: block;
+  margin: 0 0 40px;
+  font: 64px/1 "Neucha", sans-serif;
 }
 
 .cognitive-distortions-card-title {
-	color: var(--main);
-	margin-bottom: 16px;
+  color: var(--main);
+  margin-bottom: 16px;
 }
 
 .cognitive-distortions-card:hover,
 .cognitive-distortions-card:hover>.cognitive-distortions-card-title {
-	background-color: var(--main);
-	color: var(--white);
+  background-color: var(--main);
+  color: var(--white);
 }
 
 .distortion {
-	background-color: var(--light);
+  background-color: var(--light);
 }
 
 .distortion-dark {
-	background-color: var(--brown);
-	color: var(--white);
+  background-color: var(--brown);
+  color: var(--white);
 }
 
 .distortion-header {
-	display: flex;
-	gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .distortion-dark .distortion-header {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .distortion-image {
-	filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
 }
 
 .distortion-section-name {
-	font: 24px "Neucha", sans-serif;
-	color: var(--dark-transparent);
+  font: 24px "Neucha", sans-serif;
+  color: var(--dark-transparent);
 }
 
 .distortion-dark .distortion-section-name {
-	color: var(--white-transparent);
+  color: var(--white-transparent);
 }
 
 .distortion-title {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .distortion-description {
-	font: 34px "Neucha", sans-serif;
+  font: 34px "Neucha", sans-serif;
 }
 
 .distortion-content {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .distortion-content-title {
-	background-color: var(--brown);
-	padding: 5px 10px;
-	color: var(--white);
-	text-transform: uppercase;
-	font: bold 14px "Open Sans", sans-serif;
-	margin-bottom: 20px;
+  background-color: var(--brown);
+  padding: 5px 10px;
+  color: var(--white);
+  text-transform: uppercase;
+  font: bold 14px "Open Sans", sans-serif;
+  margin-bottom: 20px;
 }
 
 .distortion-dark .distortion-content-title {
-	background-color: var(--white);
-	color: var(--brown);
+  background-color: var(--white);
+  color: var(--brown);
 }
 
 footer .two-columns {
-	background-color: var(--main-dark);
-	padding: 40px 55px;
-	color: var(--white);
+  background-color: var(--main-dark);
+  padding: 40px 55px;
+  color: var(--white);
 }
 
 .subscription {
-	align-items: center;
+  align-items: center;
 }
 
 .subscription-form-title {
-	margin-bottom: 10px;
-	font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .subscription-form {
-	display: flex;
+  display: flex;
 }
 
 .subscription-form-input {
-	padding: 15px;
-	height: 50px;
-	display: block;
-	width: 100%;
-	border: none;
+  padding: 15px;
+  height: 50px;
+  display: block;
+  width: 100%;
+  border: none;
 }
 
 .subscription-form-btn {
-	background-color: var(--main);
-	height: 50px;
-	min-width: 70px;
-	border: none;
+  background-color: var(--main);
+  height: 50px;
+  min-width: 70px;
+  border: none;
 }
 
 .subscription-form-btn::before {
-	content: url("../images/send.svg");
+  content: url("../images/send.svg");
 }
 
 .subscription-form-info {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .subscription-form-info-link {
-	color: var(--white);
+  color: var(--white);
 }
 
 .contacts-info {
-	text-align: center;
-	margin-top: 60px;
-	font-size: 14px;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
 }
 
 .contacts-info-item:not(:last-child) {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
