@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: "Neucha";
+  font-family: Neucha;
   font-weight: 400;
   src: url("../fonts/Neucha-Regular.ttf");
 }
@@ -40,7 +40,7 @@ h2,
 h3 {
   line-height: 1.2em;
   font-weight: 400;
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   margin: 0;
 }
 
@@ -108,7 +108,7 @@ header {
   gap: 30px;
 }
 
-.two-columns>* {
+.two-columns > * {
   flex-basis: 50%;
 }
 
@@ -137,7 +137,7 @@ header {
 }
 
 .video {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .what-is {
@@ -180,7 +180,7 @@ header {
 .cognitive-distortions-number {
   display: block;
   margin: 0 0 40px;
-  font: 64px/1 "Neucha", sans-serif;
+  font: 64px/1 Neucha, sans-serif;
 }
 
 .cognitive-distortions-card-title {
@@ -189,7 +189,7 @@ header {
 }
 
 .cognitive-distortions-card:hover,
-.cognitive-distortions-card:hover>.cognitive-distortions-card-title {
+.cognitive-distortions-card:hover > .cognitive-distortions-card-title {
   background-color: var(--main);
   color: var(--white);
 }
@@ -213,11 +213,11 @@ header {
 }
 
 .distortion-image {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .distortion-section-name {
-  font: 24px "Neucha", sans-serif;
+  font: 24px Neucha, sans-serif;
   color: var(--dark-transparent);
 }
 
@@ -230,7 +230,7 @@ header {
 }
 
 .distortion-description {
-  font: 34px "Neucha", sans-serif;
+  font: 34px Neucha, sans-serif;
 }
 
 .distortion-content {
