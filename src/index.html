@@ -11,72 +11,110 @@
 </head>
 
 <body>
-    <header class="background">
-        <h1 class="mb-185"><span class="highlight">Когнитивные<br>искажения</span><br>в программировании</h1>
-        <img src="./images/main.png" alt="" class="header-img">
-        <div class="d-flex gap-30">
-            <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы
-                часто
-                игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с
-                ними
-                можно как-то справиться, а иногда, к сожалению, нет.</p>
-            <div>
-                <p class="mb-40">Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной
-                    потере
-                    продуктивности,
-                    багам и бесконечному разочарованию.
-                    Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать
-                    и
-                    цикл,
-                    а остатки нейтрализовать.</p>
-                <a class="btn" href="#navigation">подробнее</a>
+    <header>
+        <div class="container">
+            <h1 class="mb-185"><span class="highlight">Когнитивные<br>искажения</span><br>в программировании</h1>
+            <img src="./images/main.png" alt="" class="header-img">
+            <div class="column-gap-30">
+                <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но
+                    мы
+                    часто
+                    игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с
+                    ними
+                    можно как-то справиться, а иногда, к сожалению, нет.</p>
+                <div>
+                    <p class="mb-40">Вместе они формируют что-то вроде замкнутого цикла, и это может привести к
+                        длительной
+                        потере
+                        продуктивности,
+                        багам и бесконечному разочарованию.
+                        Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем
+                        сломать
+                        и
+                        цикл,
+                        а остатки нейтрализовать.</p>
+                    <a class="btn" href="#navigation">подробнее</a>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="what-is text-center">
+        <section class="what-is">
             <h2 class="mb-30">Что же это такое,<br><span class="highlight">когнитивные искажения?</span></h2>
             <p class="mb-30">Что такое когнитивные искажения. Petrovna Channel</p>
             <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss"
                 frameborder="0" allowfullscreen></iframe>
         </section>
-        <section class="cognitive-distortions">
-            <nav class="d-flex flex-wrap gap-30">
-                <h2 class="cognitive-distortions-title"><span class="highlight">5 когнитивных искажений</span> о
-                    существовании которых стоит помнить
-                </h2>
-                <a class="cognitive-distortions-card">
-                    <span class="cognitive-distortions-number">1</span>
-                    <h3 class="cognitive-distortions-card-title">Эффект ИКЕА</h3>
-                    <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
-                </a>
-                <a class="cognitive-distortions-card">
-                    <span class="cognitive-distortions-number">2</span>
-                    <h3 class="cognitive-distortions-card-title">Преждевременная оптимизация</h3>
-                    <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
-                </a>
-                <a class="cognitive-distortions-card">
-                    <span class="cognitive-distortions-number">3</span>
-                    <h3 class="cognitive-distortions-card-title">Искажение новизны</h3>
-                    <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более
-                        старые.</p>
-                </a>
-                <a class="cognitive-distortions-card">
-                    <span class="cognitive-distortions-number">4</span>
-                    <h3 class="cognitive-distortions-card-title">Гиперболическое обесценивание</h3>
-                    <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но
-                        доступную в будущем.</p>
-                </a>
-                <a class="cognitive-distortions-card">
-                    <span class="cognitive-distortions-number">5</span>
-                    <h3 class="cognitive-distortions-card-title">Ошибка планирования</h3>
-                    <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
-                </a>
-            </nav>
+        <section class="cognitive-distortions" id="navigation">
+            <div class="container">
+                <nav class="column-gap-30 flex-wrap">
+                    <h2 class="cognitive-distortions-title"><span class="highlight">5 когнитивных искажений</span> о
+                        существовании которых стоит помнить
+                    </h2>
+                    <a href="#ikea-effect" class="cognitive-distortions-card">
+                        <span class="cognitive-distortions-number">1</span>
+                        <h3 class="cognitive-distortions-card-title">Эффект ИКЕА</h3>
+                        <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
+                    </a>
+                    <a class="cognitive-distortions-card">
+                        <span class="cognitive-distortions-number">2</span>
+                        <h3 class="cognitive-distortions-card-title">Преждевременная оптимизация</h3>
+                        <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
+                    </a>
+                    <a class="cognitive-distortions-card">
+                        <span class="cognitive-distortions-number">3</span>
+                        <h3 class="cognitive-distortions-card-title">Искажение новизны</h3>
+                        <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более
+                            старые.</p>
+                    </a>
+                    <a class="cognitive-distortions-card">
+                        <span class="cognitive-distortions-number">4</span>
+                        <h3 class="cognitive-distortions-card-title">Гиперболическое обесценивание</h3>
+                        <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас,
+                            но
+                            доступную в будущем.</p>
+                    </a>
+                    <a class="cognitive-distortions-card">
+                        <span class="cognitive-distortions-number">5</span>
+                        <h3 class="cognitive-distortions-card-title">Ошибка планирования</h3>
+                        <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
+                    </a>
+                </nav>
+            </div>
+        </section>
+        <section id="ikea-effect" class="distortion">
+            <div class="container">
+                <div class="column-gap-30">
+                    <img src="./images/1.png" class="distortion-image" alt="">
+                    <div>
+                        <span class="distortion-section-name">Когнитивные искажения</span>
+                        <h2 class="distortion-title">Эффект ИКЕА</h2>
+                        <p class="distortion-description">Вы переоцениваете собственные решения, и, как следствие,
+                            недооцениваете решения других.</p>
+                    </div>
+                </div>
+                <div class="distortion-content">
+                    <h3 class="distortion-content-title">Как проявляется</h3>
+                    <div class="column-gap-30">
+                        <p>
+                            Когнитивное искажение называется так из-за того, что потребители зачастую предпочитают
+                            покупать
+                            товары, которые они могут собрать сами, а не уже собранные кем-то.
+                        </p>
+                        <p>Мы склонны переоцнивать наши собственные решения и недооценивать решения других. Если вы
+                            когда-то
+                            работали в компании, которая использовала тупой внутренний инструмент вместо более удобного
+                            готового решения, вы понимаете, о чём я говорю.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="background">
-        <h2>Хотите узнать больше? Подпишитесь на обновления</h2>
+    <footer>
+        <div class="container">
+
+            <h2>Хотите узнать больше? Подпишитесь на обновления</h2>
+        </div>
     </footer>
 </body>
 
