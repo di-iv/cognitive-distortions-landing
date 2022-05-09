@@ -12,14 +12,14 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
   font-weight: 400;
-  src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
 @font-face {
-  font-family: Neucha;
   font-weight: 400;
+  font-family: Neucha;
   src: url("../fonts/Neucha-Regular.ttf");
 }
 
@@ -38,10 +38,11 @@ h3 {
 h1,
 h2,
 h3 {
-  line-height: 1.2em;
+  margin: 0;
+
   font-weight: 400;
   font-family: Neucha, sans-serif;
-  margin: 0;
+  line-height: 1.2em;
 }
 
 p {
@@ -54,16 +55,17 @@ p {
 
 body {
   margin: 0;
-  font: 16px/1.6em "Open Sans", sans-serif;
-  color: var(--dark);
   overflow-x: hidden;
+
+  color: var(--dark);
+  font: 16px/1.6em "Open Sans", sans-serif;
 }
 
 section,
 header,
 footer {
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .container {
@@ -74,17 +76,20 @@ footer {
 
 header::before,
 .distortion::before {
-  content: "";
-  background-image: url("../images/background.png");
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+
   width: 100%;
   height: 100%;
+
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
-  z-index: -1;
+
+  content: "";
 }
 
 header {
@@ -97,10 +102,11 @@ header {
 
 .header-img {
   position: absolute;
-  height: 525px;
   top: 55px;
   right: -104px;
   z-index: -1;
+
+  height: 525px;
 }
 
 .two-columns {
@@ -113,15 +119,17 @@ header {
 }
 
 .btn {
-  background-color: var(--main);
-  text-transform: uppercase;
-  color: var(--white);
-  padding: 12px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
   display: block;
   width: fit-content;
+  padding: 12px 24px;
+
+  color: var(--white);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--main);
+  cursor: pointer;
 }
 
 .mb-30 {
@@ -141,21 +149,24 @@ header {
 }
 
 .what-is {
-  text-align: center;
-  margin-bottom: -100px;
   z-index: 1;
+
+  margin-bottom: -100px;
   padding-top: 100px;
+
+  text-align: center;
 }
 
 .navigation {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .cognitive-distortions {
-  background-color: var(--main-dark);
   padding-top: 100px;
+
+  background-color: var(--main-dark);
 }
 
 .cognitive-distortions-title,
@@ -165,33 +176,38 @@ header {
 }
 
 .cognitive-distortions-title {
-  font-size: 52px;
   color: var(--white);
+  font-size: 52px;
 }
 
 .cognitive-distortions-card {
-  background-color: var(--light);
   padding: 24px;
-  cursor: pointer;
-  text-decoration: none;
+
   color: var(--main-dark);
+  text-decoration: none;
+
+  background-color: var(--light);
+  cursor: pointer;
 }
 
 .cognitive-distortions-number {
   display: block;
   margin: 0 0 40px;
+
   font: 64px/1 Neucha, sans-serif;
 }
 
 .cognitive-distortions-card-title {
-  color: var(--main);
   margin-bottom: 16px;
+
+  color: var(--main);
 }
 
 .cognitive-distortions-card:hover,
 .cognitive-distortions-card:hover > .cognitive-distortions-card-title {
-  background-color: var(--main);
   color: var(--white);
+
+  background-color: var(--main);
 }
 
 .distortion {
@@ -199,8 +215,9 @@ header {
 }
 
 .distortion-dark {
-  background-color: var(--brown);
   color: var(--white);
+
+  background-color: var(--brown);
 }
 
 .distortion-header {
@@ -217,8 +234,8 @@ header {
 }
 
 .distortion-section-name {
-  font: 24px Neucha, sans-serif;
   color: var(--dark-transparent);
+  font: 24px Neucha, sans-serif;
 }
 
 .distortion-dark .distortion-section-name {
@@ -238,23 +255,28 @@ header {
 }
 
 .distortion-content-title {
-  background-color: var(--brown);
-  padding: 5px 10px;
-  color: var(--white);
-  text-transform: uppercase;
-  font: bold 14px "Open Sans", sans-serif;
   margin-bottom: 20px;
+  padding: 5px 10px;
+
+  color: var(--white);
+  font: bold 14px "Open Sans", sans-serif;
+  text-transform: uppercase;
+
+  background-color: var(--brown);
 }
 
 .distortion-dark .distortion-content-title {
-  background-color: var(--white);
   color: var(--brown);
+
+  background-color: var(--white);
 }
 
 footer .two-columns {
-  background-color: var(--main-dark);
   padding: 40px 55px;
+
   color: var(--white);
+
+  background-color: var(--main-dark);
 }
 
 .subscription {
@@ -263,6 +285,7 @@ footer .two-columns {
 
 .subscription-form-title {
   margin-bottom: 10px;
+
   font-size: 18px;
 }
 
@@ -271,17 +294,19 @@ footer .two-columns {
 }
 
 .subscription-form-input {
-  padding: 15px;
-  height: 50px;
   display: block;
   width: 100%;
+  height: 50px;
+  padding: 15px;
+
   border: none;
 }
 
 .subscription-form-btn {
-  background-color: var(--main);
-  height: 50px;
   min-width: 70px;
+  height: 50px;
+
+  background-color: var(--main);
   border: none;
 }
 
@@ -298,9 +323,10 @@ footer .two-columns {
 }
 
 .contacts-info {
-  text-align: center;
   margin-top: 60px;
+
   font-size: 14px;
+  text-align: center;
 }
 
 .contacts-info-item:not(:last-child) {
