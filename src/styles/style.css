@@ -300,6 +300,7 @@ footer .two-columns {
   padding: 15px;
 
   border: none;
+  outline: none;
 }
 
 .subscription-form-btn {
